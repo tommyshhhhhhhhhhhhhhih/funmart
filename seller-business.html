@@ -250,18 +250,16 @@
             <div class="grid-x">
               <div class="input-box cell">
                 <label class="form__title" for="businessName">營業人名稱*</label>
-                <!-- ↓顯示「錯誤訊息」，.msg__info外層需加上class「show-msg」-->
-                <div class="input__wrap show-msg">
+                <div class="input__wrap">
                   <input class="input" type="text" id="businessName" name="businessName" placeholder="請輸入營業人名稱" autocomplete="off" onchange="this.value = this.value.toUpperCase();" required="">
-                  <!-- 訊息，加上 is-error 等於錯誤訊息：--><span class="msg__info is-error">* 請輸入正確格式</span>
                 </div>
               </div>
               <div class="input-box cell">
                 <label class="form__title" for="taxID">統一編號*</label>
                 <!-- ↓顯示「錯誤訊息」，.msg__info外層需加上class「show-msg」-->
-                <div class="input__wrap show-msg">
+                <div class="input__wrap">
                   <input class="input" type="number" id="taxID" name="taxID" placeholder="請輸入統一編號" maxlength="8" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" autocomplete="off" onchange="this.value = this.value.toUpperCase();" required="">
-                  <!-- 訊息，加上 is-error 等於錯誤訊息：--><span class="msg__info is-error">* 請輸入正確格式</span>
+                  <!-- 訊息，加上 is-error 等於錯誤訊息：--><span class="msg__info">* 請輸入正確格式</span>
                 </div>
               </div>
             </div>
